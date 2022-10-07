@@ -1,0 +1,16 @@
+/*descedent*/
+div P{
+    color: olive;
+    background-color: antiquewhite;
+}
+/*child selrctor(>)*/
+div>p{
+    color: blue;
+    background-color: black;
+}
+/* ADJACENT/IMMEDIATE*/
+span+h1{
+    color: violet;
+    background-color: black;
+    border: 2px double orange;
+}

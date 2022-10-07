@@ -1,0 +1,1185 @@
+HTML AND CSS NOTES:
+---------------------------------------------------------------------------------------------------------------------------
+
+What is the web?
+The web is an information space that contains web-related resources such as images, videos, documents, text, etc..
+*web standards are defined by universal access
+*the web is a collection of documents that are interconnected by hyperlinks.
+*these docs are accessed by web browser and provided by web server
+
+what is web/internet?
+web or internet, both are not the same things
+What is the internet?
+The Internet is a medium that is used to access web pages. Collection of network/networks of networks.
+*the internet is a collection of computers or networking devices connecting together.
+*devices communicate with each other.
+
+What is a network?
+Two or more computers connected together is known as a network.
+
+What is web development?
+It is a process of debugging the web application hosting the web application and managing the web application.
+
+What is a browser?
+Browser is client-side software that is installed on our computer and it is the only software that allows us to access the webpage.
+
+What is a web server?
+The server is a computer where all the websites are hoisted.
+
+What is HTTP?
+Stands for HYPERTEXT TRANSFER PROTOCOL. It is responsible for carrying requests from the client to the server as well as responses from the server to the client.
+
+============================================================================================================================================================================
+
+HTML
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Computer is Combination of H/w & s/w, S/w interface b/w user and Os🡪is interface b/w app and h/w.
+The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in. This ensures that the web page is parsed the same way by different web browsers.
+<meta charset="UTF-8">
+Meta contains the information and charset is a Japanese language it accepts all the languages that’s know as character set …..!
+Is a markup language and not a programming language,
+Html 5 is the latest version
+Is a standard markup language..
+----------------------------------------------------------------------------------------------------------------------------
+/?/ …What is tags in html
+-----------------------------------------------------------------------------------------------------------------------------
+Html tags are like keywords which defines that, how web browser will format and display the content.
+----------------------------------------------------------------------------------------------------
+Html are of 2 types
+-------------------------------------------
+Paired:- nothing but an container <p>………..</p> the context between <>  ____ <> and whole thing is and element. Paired tags example is HTML structure.<div></div>.
+Unpaired/selfclosing tags :- eg=<br/>,<hr/>,<img/>,< Input/>,<link/>; is also called as void(empty) elements.
+
+Grouping Tags:-
+Div is know as block level element. Div tag [acts as a container] is used to define the width of the webpage.
+Span is know as inline element …… span tag, takes element width on webpage.
+
+Basic html tags:-
+
+<!..DOCTYPE >
+<html>
+<head>
+<title>
+<body>
+    <h1>Helloo Humans</h1>
+    <h2>Helloo Humans</h2>
+    <h3>Helloo Humans</h3> <!-- header tags are high priority tags thats H1 -->
+    <h4>Helloo Humans</h4>
+    <h5>Helloo Humans</h5>
+    <h6>Helloo Humans</h6>
+Above mentioned tags are header tags and h1 is not a bold tag, it’s a high priority tag
+
+<p>,<br>,<hr>
+
+TEXT Formatting tags
+---------------------------------------------------------------------------
+<!-- <b></b> makes a given content highlighted -->
+<!-- <strong></strong> any importance msg to be display on the page
+and called as semantic tag-->
+<!-- <i></i> italic style og text/content -->
+<!-- <em></em> emphaised text  -->
+<!-- <mark></mark> used to highlite a text or content -->
+<!-- <small></small> small sort of text-->
+<!-- <del></del> to strike a text -->
+<!-- <ins></ins> inserted a underline to a text -->
+<!-- <sub></sub> h2o subscript tag-->
+<!-- <sup></sup> 3^ superscript-->
+
+......Website- Collection of webpages-🡪2create webpages we have 3technologies html css js
+......Webpage:- is a HyperText Document provided by a website and displayed to a user in a browser.
+......Browser is a software and application
+......The basic objective of a web server is to store, process and deliver web pages to the users.
+......Web browser is a software application for accessing information on the web.
+......url uniform resources locator
+......6/7parts in a url
+......search engine is where every browser has its own engines Example chrome has v8 engine, Mozilla has spider monkey, IE has chakra,
+......Search engine is a web based tool that enables users to locate information on www.
+
+How a web works??
+If a user should make a webpage dynamic he/she needs JS.
+SPA is static and ex gmail,google,facebook,twitter
+MPA is dynamic ex e-commerce sites…
+Static web pages are the page where contents remains same it uses html and css.
+Dynamic pages are where its automatic and customizable
+
+Core Attribute in html.
+------------------------------------------
+Title=”” act as a tool tip
+Id=””
+Class=””
+Style=””
+
+HTML LISTS   <li>======</li>
+Ordered list
+[start & type attributes used]
+Unordered list=== circle,disc,square
+Nested list=== list within the list
+Description list ==dl,dt,dd
+Anchor tags & Hyperlink [tags are for html]
+<a> anchor tag is used to link one page to other either internally or externally
+Href is an attribute [hyperreference]
+Href=”path”
+Target used to load the link given in new tab [blank and self] default is self..
+
+Absolute path accessing some websites with its absolute path [external]
+Relative path is calling an other page by accessing the path of it [internal]
+<Image>
+Src=”path url” Alt=”specify the type of content”
+
+______List of block level elements
+______p
+______h1, h2, h3, h4, h5, h6
+______ol, ul
+______pre
+______address
+______blockquote
+______dl
+______div
+______fieldset
+______form
+______hr
+______
+
+HTML inline elements
+1. HTML inline-level elements can appear in the body of an HTML page.
+2. It can contain data and other inline elements.
+3. By default, inline elements do not begin on new lines.
+4. inline elements create shorter structures (than block-level elements).
+List of inline elements
+b, big, i, small, tt
+em,strong,a, br, img, map, object, q, script, span, sub, sup
+button, input, label, select, textarea
+==========================================================================
+Anchor
+Link tag <link> mainly to link css files.It is within <head>
+for link tag main attribute are rel & href.
+rel = “style sheet” reletion [mainly rel is important for linking stylesheets]
+href=”path” hyper reference
+<p>
+    <a href="tel:1234567890">Call to the given number</a>
+    </p>
+    <a href="mailto:example@gmail.com">send Email</a>
+Link that dials a number [tel]
+And link that sends email is [mailto]
+These are two different things. The anchor element is used to link to another page or to a certain part of the page if you use its ID.
+
+<a href="index.html">Home</a>
+And The link tag defines a link between a document and an external resource.
+
+The link tag is used to link to external style sheets.
+<head>
+<link rel="stylesheet" type="text/css" href="theme.css">
+</head>
+HTML <figure> Tag: The <figure> tag in HTML5 is used to add self-contained content like illustrations, diagrams, photos, or codes listing in a document. It is related to the main flow, but it can be used in any position of a document and the figure goes with the flow of the document and if remove it then it should not affect the flow of the document. In simple words, the figure tag is used to semantically organize the content of images, videos, audios or even charts or tables, block of codes in the HTML document.
+syntax:-
+<figure>
+    <img src="url">
+    <figcaption> content  </figcaption>
+</figure>
+
+Table:
+Rows & columns
+tr, th, td <>tags
+
+Cell padding & cell spacing
+Colspan and rowspan
+
+Forms 🡪user info/data
+Type	                                 Description
+
+button:	  A push button with no default behavior displaying the value
+          of the value attribute,empty by default.
+
+checkbox:  A check box allowing single/multiple values to be
+          selected/deselected.
+
+color:	  A control for specifying a color; opening a color picker
+          when active in supporting browsers.
+
+date:	  A control for entering a date
+         (year, month, and day, with no time).
+
+datetime-local:	A control for entering a date and time, with no time
+                zone.
+
+email:	    A field for editing an email address.
+
+file:	   A control that lets the user select a file.
+           Use the accept attribute to define the types of files that
+           the control can select.
+
+month:	   A control for entering a month and year, with no time zone.
+
+number:	   A control for entering a number.Displays a numeric keypad
+           in some devices with dynamic keypads.
+
+password:    A single-line text field whose value is obscured.
+            Will alert user if site is not secure.
+
+radio:	   A radio button, allowing a single value to be selected out
+          of multiple choices with the same name value.
+
+range:	  A control for entering a number whose exact value is not
+          important.
+
+search:  A single-line text field for entering search data.
+
+submit:	  A button that submits the form.
+
+text:	  The default value. A single-line text field.
+          Line-breaks are automatically removed from the input value.
+
+time:	  A control for entering a time value with no time zone.
+
+week:	  A control for entering a date consisting of a week-year
+          number and a week number with no time zone.
+
+Required
+Placeholder
+autofocus
+readonly
+
+Type=radio --- it is used to select any one of the option
+Type=checkbox--- it is to used select multiple option.
+
+
+Html 🡪 more semantic
+<nav>
+<header>
+<section>
+<article>
+<footer>
+<figure>
+<figcaption>
+<mark>
+<details>
+<summary>
+<meta>
+<main>
+<audio> <video>
+
+Tag                 Description
+
+<article>	defines an self contained composition and independent
+                in a web page
+
+<aside>	        Defines content aside from the page content
+
+<details>	Defines additional details that the user can view
+                or hide
+
+<figcaption>	Defines a caption for a <figure> element
+
+<figure>	Specifies self-contained content, like illustrations,
+                diagrams, photos.
+
+<footer>	Defines a footer for a document or section
+
+<header>	Specifies a header for a document or section
+
+<main>	        Specifies the main content of a document
+
+<mark>	        Defines marked/highlighted text
+
+<nav>	        Defines navigation links
+
+<section>	Defines a section in a document
+
+<summary>	Defines a visible heading for a <details> element
+------------------------------------------------------------------------------------------
+Sectioning Element
+
+    <!-- Details tag --> open can be added in detail <>
+    <details>
+        <summary>Click here to view the data</summary></details>
+
+_______Can we do validation in HTML?
+The required and pattern HTML attributes can help perform basic validation. But if you want more complex validation or want to provide a detailed error message, you can use the Constraint Validation API.
+HTML5 provides a bunch of attributes to help validate data. Here are some common validation cases:
+Making fields required using required
+Constraining the length of data:
+minlength, maxlength: for text data
+min and max for max value of num type
+Restricting the type of data using type:
+<input type="email" name="multiple>
+
+
+<Script> tag is used to run our java script code and it helps in execution of our java script code which means all our java script code can be written within our script tag..
+It is used in both head and body tag
+[full fledged validation cant be done in html]
+
+Html form elements
+Meter tag:- it is used to show gauge. This meter will be green if the value is greater than high, yellow if value is between high and low, and red if value is less than low.
+<meter min=”0” max=”100” low=”40” high=”80” optimum=”100” value=”20”></meter>
+Progress :- show progress of task completion.
+<progress valur=”75” max=”100”></progress>
+Datalist this tag specifies the list of the predefined options. To keep it unique an id attribute is used in datalist. An list attribute helps to keep the datalist elements in sync with input tag.
+
+=====================**********************************************===========================================================**************************************=========
+CSS 3 cascading stylesheet….
+Styling / design , current version is css3
+What is css3
+Is a style sheet language which is used to describe the look and formatting of documents written in markup language.
+It is generally used with html to change the style of web pages and UI.
+Commenting in css :-- /*-----*/
+
+Css syntax:- selector,property,value
+                            |              |           |
+                            P{        color: blue  }
+History of css…..
+How to add css
+There are 3 ways to add css to html
+Inline ss  🡪Style attribute
+Internal ss 🡪<style >tag
+External ss🡪<link>tag
+---------------------------------------------
+-->css stands for cascading style sheets.
+-->Its a language to make our web-page presentable.
+-->designed to make style sheets for webpage.
+
+-->Acronmy:
+          cascading :- falling of style.
+          styles :-  adding designs/styling our html tags.
+          sheets :- writing our style in different documents.
+
+                      HISTORY OF CSS
+
+--->1994 first proposed by HAKON WIUM LIE on 10TH october
+--->1996 css was published on 17th november with influencer BERT BOS.
+--->later he became co-author of css.
+--->1996 css became official and css was published in december
+
+---------------------------------------------------------------------------------------------
+
+TYPES OF CSS OR DIFFERENT WAYS OF ADDING CSS
+
+*INLINE STYLE
+*INTERNAL STYLE
+*EXTERNAL STYLE
+
+1)INLINE STYLE:-
+  -->Inline css is used to apply css on single line or element
+  -->Before css this was the only way to apply styles
+  -->Not an efficient way to write as it has lot of redundancy
+
+  eg:- <p style = "color :blue";>hello </p>
+
+
+2)INTERNAL STYLE:-
+  -->Internal css is used to apply css on a single document or page.
+     it can effect all the element of the page.
+  -->It is written inside the style tag within head section of html.
+
+eg:- <head>
+     <style>
+      p{
+          color : blue;
+       }
+    </style>
+    </head>
+
+3)EXTERNAL STYLE:
+  -->External CSS contains separate CSS file which contains only style property
+     with the help of tag attributes (For example class, id, heading, … etc).
+  -->CSS property written in a separate file with .css extension and should
+     be linked to the HTML document using link tag.
+
+eg:-  <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style1.css"/>
+    </head>
+    <body>
+        <div class = "main">
+            <div class ="GFG">q spiders</div>
+            <div id ="menu">
+                welcome to q spiders mysore have a great day.
+            </div>
+        </div>
+    </body>
+</html>
+
+Example: The file given below contains CSS property.
+        This file save with .css extension. For Ex: style1.css
+
+main{
+    background-color:powderblue;
+}
+.main {
+    text-align:center;
+}
+.GFG {
+    color:#009900;
+    font-size:50px;
+    font-weight:bold;
+}
+
+PRIORITY ORDER:
+INLINE->INTERNAL->EXTERNAL
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+CSS SELECTORS
+-------------------------------------------------------------------------------------------------
+A CSS selector are used to select HTML elements based on their element name, id, attribute, etc.
+Simple selectors
+Universal selector 🡪is denoted using (*) [universal selector will do it for all the elements]
+The asterick(*)is know as the css universal selectors.it can be used to select any and all types of elements in an HTML page.
+This selectors is usefull when we want to select all the elements on the page.
+Syntax:= *{
+                    property:value
+                    }
+
+Element selectors
+The element selector in css is used to select html elements that are required to styled.
+Syntax:- element_name
+            {
+               //css property
+            }
+ID selectors🡪denoted using(#)
+Id selectors uses the id attribute of the html element to select a specific element.
+Id of an element is unique within the page, so the id selectors is used to select one unique element!!.
+To select an element with a specific id, write a hash(#) character, followed by the id element.
+Syntax:-#id_name
+              {
+                 Property:value;
+               }
+
+Class selectors 🡪denoted using(.)
+                              Class selectors selects HTMl element with a specific class attribute.
+                              To select elements with a specific class, write a period (.) character, followed by the
+                              class name.
+                              The class name is mostly used to set the css property to the given class.
+                               Syntax:- .class_name
+                                               {
+                                                  Property:name;
+                                                }
+
+Combinators Selector:-
+ A combinator is something that explains the relationship/combination
+ between the selectors.
+
+There are four different combinators in CSS:
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+descendant selector (space)
+-->it will take all the direct child and in-direct child
+
+child selector (>)
+-->it will take only direct child
+
+adjacent sibling selector (+)
+-->it will select adjacent sibling or immediate sibling
+   right after the first sibling.
+
+general sibling selector (~)
+-->it will select all the siblings
+-->The general sibling selector selects all elements
+that are next sibling of a specified element.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pseudo element selectors :is a keyword added to a select0rs that lets you style a specific part of the selected elements.
+
+It can be used to:
+Style the first letter, or line, of an element.
+Insert content before, or after, the content of an element.
+Syntax: selectors::pseudo class { Property:value;}
+::first-line pseudo element
+The ::first-line pseudo-element is used to add a special style to first line of a text.
+
+::before pseudo element
+The ::before pseudo element can be used to insert some content before the content of an element.
+Syntax: selectors::before { Property:value;}
+
+::after pseudo element
+The ::before pseudo element can be used to insert some content after the content of an element. Syntax: selectors::after { Property:value;}
+
+::marker pseudo element
+The::marker is used to select the marker of list items.
+Syntax: selectors::marker { Property:value;}
+
+::selection pseudo element
+The ::selection is which matches the portion of an element which is selected by a user.
+Syntax: selectors::selection { Property:value;}
+
+
+
+Pseudo class  is a selectors  [in pseudo class there oly one :] is a keyword added to a selector that specifies a special state of the selected elements.
+Syntax: selectors:pseudo class
+                              { Property:value;}
+
+Anchor pseudo class
+Represents the state of links as unvisited,visited or currently selected.
+Anchoe also enables you to activate the html elements or apply a speacified style to an element when the mouse pointer is kept over.
+                     The anchor pseudo class include the following :
+:link[applies styles to non visitied links]
+:visited[applies styles to visited links]
+:hover[ to an element over which the mouse-pointer moves]
+:active[applies styles to an active element]
+{visited=purple, unvisited=blue, active=red}
+Example:- /* visited link */
+/* a:visited{
+    color: rgb(108, 108, 231);
+} */
+
+/* unvisited link */
+/* a:link{
+    color: blueviolet;
+} */
+
+/* hover */
+/* :hover{
+    color: tomato;
+} */
+
+/* active */
+/* :active{
+    color: yellowgreen;} */
+
+/* autofocus */
+/* input:focus{
+    outline:4px solid yellow;} */
+
+/* checked and unchecked */
+/* input:checked{
+    width: 30px;
+    height: 30px;
+} */
+/* For specifying the number nth child */
+p:nth-child(1){
+    color: cornflowerblue;
+}
+
+What is the differernce between pseudo class & pseudo elements?
+A pseudo-class is a selectors that assist in the selection of something that cannot be expressed by a simple slectors, for example :hover.
+
+A pseudo-element however allows us tocreate items that do noit normally exist in the document tree, for example : :after.
+
+Pseudo – classes
+Pseudo classes select regular element but under certain conditions, like when their position relative to siblings.
+List of pseudo classes in css3:-
+Dynamic pseudo classes
+:visited
+:link
+:hover
+:active
+:focus
+
+
+Pseudo-elements:
+Pseudo-elements effectively create new elements that are not specified in the markup of the element and can be manipulated much like a regular element.
+
+::before
+::after
+
+
+Border Properties… are used to specify the style,color,width,radius.
+--------------------------------------------------------------------------
+Border-style:
+Border-color:
+Border-width:
+Border-radius:
+
+FONTS:-
+------------------------------------------------------------------------
+Font properties: is used to control the look of text, by the use of css font property we can change the text size, color, style and more …
+These are some important font attributes
+Css font color: is used to change the color of the text( standalone attribute).
+Font family: is used to change the face of the font.()
+Font size: is used to increase or decrease the size of the font (px)
+Font style : is used to change the font to bold italic oblique.
+Font variant : this property creates a small caps effect.
+Font weight: is used to increase / decrease the boldness and lightness of the fonts.
+
+CSS Box model:-
+-----------------------------------------------------------------
+Text/image/content
+Padding
+Border
+Margin
+
+
+Colors
+--------------------------------------------------------------------
+Colors-name
+#RedGreenBlue
+Rgb
+Hsl = hue saturation(contrast) lightness
+Hsla = alpha
+
+Background properties:-
+----------------------------------------
+Background-image
+Background-repeat
+Background-position
+Background-attachment
+Background-size
+
+Text-Effects
+---------------------------------------
+Css in the mechanism to adding style in the various web documents.
+Text effects allows us to apply different types of effects on text used in an html document .
+There are properties in css which are used to add effects to the text:-
+
+===========================================================================================================
+//text properties//
+
+1. color: anycolor ;
+2. text-align: ;
+             left,right,center,justify,initial,inherit.
+3. direction: ;
+            ltr,rtl.
+4.text-decoration: ;
+                none,underline,overline,line-through.
+5.text-transform: ;
+                uppercase,lowercase,none,capitalize.
+6.letter-spacing: ;
+               normal,length(any value like 10px or 20px)
+7.word-spacing: ;
+             normal,length(any value like 10px or 20px)
+8.text-shadow: ;
+             h-shadow,v-shadow,blur,color,none;
+        ex:text-shadow: 5px 5px 5px rebeccapurple;
+//font properties//
+font-family: ;
+           fantasy,cursive,
+font-style: ;
+          normal,italic,oblique
+font-weight: ;
+font-size: ;
+========================Gradient and text shadow============EXAMPLE PROGRAM=============================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #l1{
+            height: 200px;
+            background-image: linear-gradient(orange,white,green);
+        }
+        #l2{
+            height: 200px;
+            background-image: linear-gradient(180deg,orange,white);
+        }
+        #l3{
+            height: 200px;
+            background-image: linear-gradient(to right,rgb(20, 13, 1),white,green);
+        }
+        #l4{
+            height: 200px;
+            background: rgb(29,252,253);
+background: linear-gradient(90deg, rgba(29,252,253,1) 34%, rgba(131,58,180,1) 60%, rgba(252,176,69,1) 83%);
+        }
+        .radial{
+            margin: 50px;
+            height: 300px;
+            width: 300px;
+            background-image: radial-gradient(circle,rgb(18, 16, 16),rgb(221, 221, 211));
+        }
+
+        h1{
+            text-shadow: 2px 5px 2px red;
+            background-color: aqua;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Gradients in css -->
+    <!-- Were you can use two or 3 colors can be used with to make some shades
+         gradients helps to make smooth transition b/w the colors   -->
+    <!--linear gradient  -->
+    <div id="l1">Linear</div>
+    <div id="l2">Linear</div>
+    <div id="l3">Linear</div>
+    <div id="l4">Linear</div>
+    <div class="radial">radial</div>
+
+    <!-- iframe is used load a webpage within your current webpage or embedding  -->
+    <!-- <iframe src="./gradient.html" frameborder="2"></iframe> -->
+<br>
+    <a href="../font.html" target="iframe">find my page</a>
+    <iframe src="" name="iframe" frameborder=""></iframe>
+
+
+    <h1>text shadow</h1>
+
+</body>
+</html>
+
+
+
+
+===========================================================================================================
+Flexbox
+
+Flexlayout is based on flex flow directions
+
+-->Block , for sections in a webpage
+-->Inline for text
+-->The main idea behind the flex layout is to give the container the ability
+to alter its items width/height (and order) to best fill the available space
+(mostly to accommodate kind of display devices and screen size).
+
+Properties
+
+Display : flex | inline-flex ;
+
+Flex-direction : row |column | row-reverse | col-reverse
+
+Flex-wrap : wrap | nowrap |wrap-reverse
+
+Justify-content : flex-start | flex-end |center| space-around |
+space-between | space-evenly
+
+Align-items : flex-start | flex-end | center
+
+Align content : flex-start | flex-end | center
+
+
+flex-direction property:
+      The flex-direction property specifies the direction of the flexible items.
+Note: If the element is not a flexible item, the flex-direction property has
+      no effect.
+
+Property Values:
+column – It stacks the flex items vertically (from top to bottom)
+column-reverse - It stacks the flex items vertically (but from bottom to top)
+row – It stacks the flex items horizontally (from left to right)
+row-reverse – It stacks the flex items horizontally (but from right to left)
+
+flex-wrap property:
+      The flex-wrap property specifies whether the flex items should wrap or not.
+Note: If the elements are not flexible items, the flex-wrap property has no
+      effect.
+
+Property Values:
+wrap – It specifies that the flex items will wrap if necessary
+nowrap – It specifies that the flex items will not wrap (this is default)
+wrap-reverse – It specifies that the flexible items will wrap if necessary, in reverse order
+
+justify-content property:
+     The justify-content property aligns the flexible container's items when the items do not
+     use all available space on the main-axis (horizontally).
+Note: Use the align-items property to align the items vertically.
+
+Property Values:
+center – It aligns the flex items at the center of the container
+flex-start – It aligns the flex items at the beginning of the container (this is default)
+flex-end – It aligns the flex items at the end of the container
+space-around – It displays the flex items with space before, between, and after the lines
+space-between – It displays the flex items with space between the lines
+space-evenly - It displays the flex items with even space between the lines
+
+align-items property:
+     The align-items property specifies the default alignment for items inside the flexible
+     container.
+Note: Use the align-self property of each item to override the align-items property.
+
+ -----Property Values:----------------------
+center –     It aligns the flex items in the middle of the container
+flex-start – It aligns the flex items at the top of the container
+flex-end –   It aligns the flex items at the bottom of the container
+stretch –    It stretches the flex items to fill the container (this is default)
+baseline –   It aligns the flex items such as their baselines aligns
+
+align-content property:
+      The align-content property modifies the behavior of the flex-wrap property.
+      It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
+Note: There must be multiple lines of items for this property to have any effect! Use the
+    justify-content property to align the items on the main-axis (horizontally).
+
+Property Values:
+space-between - Displays the flex lines with equal space between them
+space-around -  Displays the flex lines with space before, between, and after them
+space-evenly -  Lines are evenly distributed in the flex container, with equal space around them.
+stretch -       Stretches the flex lines to take up the remaining space (this is default)
+center -        Displays display the flex lines in the middle of the container
+flex-start -    Displays the flex lines at the start of the container
+flex-end -      Displays the flex lines at the end of the container
+
+==============================================================================
+-->Positions////////////
+
+ It sets how an element is positioned in a document. The top, right,bottom,
+ and left properties determine the final location of positioned elements.
+
+There are five values the  position property can take. They are:
+	• Static(by default)
+	• Relative - fixed- we can fix top right or bottom  [position relative
+     always starts from its initial position] and makes a white space
+	• Absolute- for element , we can change [starts from its parent and it
+    dose'nt consume white space and collapses or affects other
+	• Elements]
+	• Fixed
+
+
+Value     Description
+
+static    Normal position for the element(where top ,right,bottom, and left
+          have no effect)
+          Div { position: static;}
+
+relative  Position the element absolutely relative to its container
+          Div { position: absolute; top:10px;left:15px; }
+
+absolute  Position the element absolutely relative to its container.
+
+fixed     positions the element relative to the screen's viewport and stay
+          fixed on screen when scrolling
+          Div { position : fixed; top:10px;left:15px
+
+============================================================================================
+
+Transform
+
+2D Transforms
+
+CSS transforms allow you to move, rotate, scale and skew an elements
+
+
+2D transformation methods:
+
+
+
+Tanslate():  allows you to move elements
+          : we can use translateX and translateY also
+
+
+ <h1>2D transform</h1>
+
+
+
+h1 {
+
+  border: 2px solid black;
+
+  width: 300px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  margin-top: 40px;
+
+  background-color: aqua;
+
+  transform: translate(100px, 150px);
+
+}
+
+----------------------------------------------
+
+
+
+Css translate moves an element up and down or side-to-side:
+By indicating one value, you move the element to the right side. Negative
+values move elements to the left.
+The second value moves the element down. Negative values moves element up.
+
+2) Rotate(deg): Rotates the element clockwise from its current position.
+
+We have to use one value only
+
+Rotate()
+
+eg:
+.rotated {
+  transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+  background-color: pink;
+}
+
+------------------------------------------------------
+Scale(): Affects the size of the element. This also applies to the font-size,
+padding, ,height, and width of an element, we cannot use px ,we can use
+decimal value, normally we give just number.
+
+
+scaleX()
+
+	h1{
+ border: 2px solid black;
+
+  width: 300px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  margin-top: 40px;
+
+  background-color: aqua;
+  transform: scaleX(5);
+}
+
+---------------------------------
+
+scaleY()
+
+h1{
+ border: 2px solid black;
+
+  width: 300px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  margin-top: 40px;
+
+  background-color: aqua;
+
+
+
+  transform: scaleY(5);
+}
+
+
+Scale(x,y)
+
+----------------------------------------------
+Skew(): a transformation that skews an element on the 2D plane
+skewX()
+
+
+h1 {
+
+  border: 2px solid black;
+
+  width: 300px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  margin-top: 40px;
+
+  background-color: aqua;
+
+  transform: skewX(110deg);
+
+}
+
+-----------------------------------------
+
+skewY()
+
+
+h1 {
+
+  border: 2px solid black;
+
+  width: 300px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  margin-top: 40px;
+
+  background-color: aqua;
+
+  transform: skewY(120deg);
+
+}
+
+----------------------------
+
+Skew(x,y)
+
+
+h1 {
+
+  border: 2px solid black;
+
+  width: 300px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  margin-top: 40px;
+
+  background-color: aqua;
+
+  transform: skew(110deg, 210deg);
+
+}
+
+--------------------------------------------------
+
+matrix():-
+
+The matrix() function is specified with six values.
+
+syntax:-
+
+matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
+
+eg:-
+
+#div1 {
+  transform: matrix(1, 2, -1, 1, 80, 80);
+  background-color: pink;
+}
+
+========================================================================-----------------------------------------------------------------------------
+Transitions
+
+
+
+CSS transitions allows you to change property values smoothly over a given
+duration
+
+
+
+List of transition properties
+
+
+
+Property
+
+
+transition
+
+A shorthand property for setting the four transition properties into a
+single property
+-------------------------------------------
+transition-delay
+
+Specifies a delay (in seconds) for the transition effect
+------------------------------------------------
+transition-duration
+
+Specifies how many seconds or milliseconds a transition effect takes to
+complete
+------------------------------------------------
+transition-property
+
+Specifies the name of the CSS property the transition effect is for particular
+element
+-------------------------------------------------
+transition-timing-function
+
+Specifies the speed curve of the transition effect
+-------------------------------------------------------
+
+
+Transition
+Syntax :
+
+
+ transition:  width  2s  ease;
+   transition: all 0.3s ease-in;
+-----------------------------------------------------------
+
+Transition-delay : refers to how long you want to wait before starting the
+duration. When the transition effect will start. This value is written in
+seconds/milliseconds. 3s
+
+
+ transition-delay: 5s;
+ transition-delay: 15ms;
+
+---------------------------------------------------------------
+
+Transition-duration : refers to the duration of the transition
+ transition-duration: 3s;
+
+----------------------------------------------------------------------
+
+Transition-property: refers to the CSS property you wish to transition.
+
+
+ transition-property: rotate;
+
+:backgroundcolor,height,width
+
+---------------------------------------------------------------------
+
+Transition-timing-function: refers to how to transitions occurs.
+All transitions have a value of linear by default, which means the property
+changes evenly until the end of the transition.
+And it describes about the speed curve of the transition effect.
+It helps to change the speed of an transition over the duration.
+
+
+Syntax  transition-timing-function: linear|ease,ease-in,ease-out,ease-in-out;
+
+--------------------------------------------------------------------
+
+
+=================================================================================================================
+Transition timing
+
+function
+
+Description
+--------------------------------------
+Linear
+
+Specifies a transition effect with the same speed from start
+ To  end
+------------------------------------------
+ease
+
+Default value. Specifies a transition effect with a slow start, then
+
+Fast, then end slowly.
+----------------------------------------------
+Ease-in
+
+Specifies a transition effect with a slow start.
+------------------------------------------------------
+Ease-out
+
+Specifies a transition effect with a slow end.
+--------------------------------------------------------
+Ease-in-out
+
+Specifies a transition effect with a slow start and end.
+
+--------------------------------------------------------
+
+.card {
+
+  width: 100px;
+
+  border: 10px solid teal;
+
+  padding: 10px;
+
+  margin-top: 50px;
+
+  background: corol;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  height: 50px;
+
+  transition: background-color 2s ease-in-out;
+
+  /* ease-in-out slow start slow end */
+
+}
+
+.card:hover {
+
+  cursor: pointer;
+
+  background-color: aquamarine;
+
+  border: 10px solid crimson;
+
+}
+
+
